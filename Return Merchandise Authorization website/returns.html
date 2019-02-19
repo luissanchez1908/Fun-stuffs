@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    
+    <title>
+        returns
+    </title>
+    <head>
+    <link rel="stylesheet" href="RMA.css">
+    <script type="application/javascript" src="RMA.js"></script>
+     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    </head>
+    <header>
+        
+  <div class = "container">
+    <a  class = "logo" href="RMA.html">RMA</a>
+    <nav>
+      <ul>
+        <li><a href="RMA.html" >Books</a> </li>
+        <li><a href="returns.html" >Returns</a> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    
+    <body>
+        <form  method="POST" action="db.php">
+        <div class="form">
+        <h2>Please enter the serial number:</h2>
+        <input type="number" id="serial" placeholder="Serial Number.." name= "serial" value = "value"required>
+        
+        
+        <input class="submit" type="button" type="submit"  value="Submit" onclick="randomNumber()"/>
+        
+        <h1 id="conftitle">Confirmation number is: </h1>
+        <h1 id= "confirmation"></h1>
+        
+        <h1 id="addresstitle">Return address is: </h1>
+        <h1 id= "address"></h1>
+            
+        
+        
+        
+        </div>
+    </form>
+    </body>
+
+
+</html>
